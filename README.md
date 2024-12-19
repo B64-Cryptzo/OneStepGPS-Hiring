@@ -4,6 +4,10 @@ Hey OneStep Team,
 
 I was super excited for this opportunity to demonstrate my skills to you in both backend development and frontend integration. Thank you for your time and consideration.
 
+## Workflow
+
+![Project Workflow Plans](img/Project%20Workflow%20Plans.jpg)
+
 ## Overview
 
 This project showcases a full-stack application with a Vue.js frontend and a Go backend. The purpose of this repository is to demonstrate my ability to integrate both technologies and deliver a complete solution. It includes a simple batch file to quickly start both the frontend and backend servers and immediately launch the webpage for easy access.
@@ -36,7 +40,7 @@ The project consists of the following main components:
 ## How to Run
 
 1. **Clone the repository** to your local machine.
-2. **Ensure you have Node.js**, Vue CLI, Go installed, and any other required dependencies for both the frontend and backend.
+2. **Ensure you have** Node.js, Vue CLI, Go installed, and any other required dependencies for both the frontend and backend.
 3. **Run the batch script**:
    - Simply double-click `launchFrontendAndBackend.bat` to start both the frontend and backend servers.
    - The batch file will automatically launch the webpage in your browser, which should be available at `http://localhost:3000`.
