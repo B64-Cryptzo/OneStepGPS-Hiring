@@ -1,6 +1,6 @@
 @echo off
 
-:: Run the build serve command
+:: Run the backend server
 cd Backend
 start /B GolangBackend.exe
 
