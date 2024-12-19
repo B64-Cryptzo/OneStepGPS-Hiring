@@ -6,7 +6,7 @@ I was super excited for this opportunity to demonstrate my skills to you in both
 
 ## Workflow
 
-![Project Workflow Plans](img/Project%20Workflow%20Plans.jpg)
+![Project Workflow Plans](img/Project%20Workflow%20Plans.png)
 
 ## Overview
 
