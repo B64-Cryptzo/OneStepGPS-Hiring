@@ -1,0 +1,278 @@
+#app {
+    background-color: #F1F1F1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    margin: 30px;
+    padding: 20px;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.google-map-container,
+.device-list-container {
+    border-radius: 10px;
+    flex: 1;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.google-map-container {
+    border: 2px solid #1ba8ff60;
+    box-shadow: 0 0 2px #002E6D, 0 0 4px #002E6D, 0 0 6px #002E6D;
+}
+
+.device-list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 0;
+}
+
+.device-listbox {
+    overflow-y: auto;
+    scrollbar-width: thin;
+    flex-grow: 1;
+}
+
+.device-list-header {
+    background-color: #e0e0e0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    text-align: left;
+}
+
+.device-list-header,
+.listbox-item {
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.listbox-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.listbox-item:hover {
+    background-color: #c5c5c5;
+}
+
+.listbox-item:active {
+    background-color: #E1E1E1;
+}
+
+.header-device-actions,
+.header-device-visibility {
+    text-align: center;
+}
+
+.device-name,
+.device-id,
+.device-state {
+    text-align: left;
+    user-select: none;
+}
+
+.magnifying-glass svg {
+    fill: #070707;
+    height: 24px;
+    width: 24px;
+}
+
+.magnifying-glass:hover svg {
+    fill: #6a6a6a;
+    height: 24px;
+    width: 24px;
+}
+
+.magnifying-glass,
+.eye-icon {
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+.eye-icon svg {
+    fill: #070707;
+    height: 24px;
+    width: 24px;
+}
+
+.eye-icon:hover svg {
+    fill: #6a6a6a;
+    height: 24px;
+    width: 24px;
+}
+
+.selected-device-container {
+    background-color: #f0f0f0;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #6a6a6a, 0 0 4px #6a6a6a, 0 0 6px #6a6a6a;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    margin-top: 15px;
+    padding: 20px;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    height: 50%;
+}
+
+.selected-device-name {
+    background: rgb(221, 221, 221);
+    border-radius: 20px;
+    color: #070707;
+    font-size: 4rem;
+    font-weight: bold;
+    left: 50%;
+    margin: 0;
+    user-select: none;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.selected-device-vin {
+    background: rgb(221, 221, 221);
+    border-radius: 20px;
+    color: #070707;
+    font-size: 4rem;
+    font-weight: bold;
+    left: 50%;
+    margin: 0;
+    user-select: none;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    transform: translateX(-50%);
+}
+
+.selected-device-container p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.selected-device-container strong {
+    color: #0074D9;
+}
+
+.selected-device-image {
+    align-items: center;
+    background: rgb(221, 221, 221);
+    border: 2px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%; 
+    left: 88%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 15vw; 
+    height: 15vw;
+    max-width: 90%; 
+    max-height: 90%; 
+    flex-shrink: 0; 
+}
+
+.selected-device-image:hover {
+    background-color: #c5c5c5;
+}
+
+.selected-device-image:active {
+    background-color: #f5efef;
+}
+
+.selected-device-image label {
+    font-size: .8em;
+    user-select: none;
+}
+
+.selected-device-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.selected-device-image svg {
+    fill: #000;
+    height: 100%;
+    width: 100%;
+}
+
+.gas-icon {
+    align-items: center;
+    background: rgb(221, 221, 221);
+    border-radius: 20px;
+    color: #070707;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 18vh;
+    left: 30px;
+    position: absolute;
+    top: 30px;
+    width: calc(35vw / 3);
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.gas-icon svg {
+    fill: #070707;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 12px;
+    width: 100px;
+}
+
+.gauge-container {
+    background: rgb(221, 221, 221);
+    border-radius: 3px;
+    border-radius: 20px;
+    bottom: 10px;
+    display: block;
+    height: 20vh;
+    flex-shrink: 0;
+    left: 30px;
+    position: absolute;
+    width: calc(50vw / 3);
+    user-select: none;
+}
+
+.gauge-container>.gauge .dial {
+    stroke: #334455;
+    stroke-width: 10;
+}
+
+.gauge-container>.gauge .value {
+    stroke: orange;
+    stroke-dasharray: none;
+    stroke-width: 13;
+}
+
+.gauge-container>.gauge .value-text {
+    fill: #ccc;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
