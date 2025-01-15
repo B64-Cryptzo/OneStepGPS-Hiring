@@ -50,7 +50,7 @@ The project consists of the following main components:
 The login for the webpage is the same as the one provided in the original email from the hiring team:
 
 - **Username**: applicant5@onestepgps.com
-- **Password**: sij#yDnWXbjMG3
+- **Password**: ||sent in original email||
 
 ## Notes
 
